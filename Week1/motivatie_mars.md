@@ -1,4 +1,4 @@
-#Uitwerking opdracht
+# Uitwerking opdracht
 **Opdracht** Mars
 
 **Weeknummer** 1
@@ -11,24 +11,24 @@
 
 **Pogingnummer**1
 
-##Vraagstelling
+## Vraagstelling
 Zie : https://dodona.ugent.be/nl/exercises/1813154454/
 
-##Invoer
+## Invoer
 Het aantal marsdagen (heel getal)
 
-##Uitvoer
+## Uitvoer
 De duur in aardse tijd
 
-##Verbanden in en uitvoer
+## Verbanden in en uitvoer
 De invoer wordt met een formule omgezet naar de uitvoer
 
-##Beperkingen
+## Beperkingen
 Kan alleen overweg met hele getallen
 
 Controlleerd niet op foutsituaties
 
-##Voorbeelden
+## Voorbeelden
 Verwachte invoer: 
 ```
 1876
@@ -42,20 +42,20 @@ Voorbeelden van ongeldige invoer
 120 dagen (bevat letters)
 102.434 (te exact, we willen hele dagen)
 ```
-##Ontwerp
+## Ontwerp
 Ik wil graag de tijd omzetten in een eenheid die exact genoeg is voor de 
 toepassing en makkelijk om te zetten is naar een tijdsduur in aardse tijd, in 
 een leesbaar format. Hiervoor gebruik ik secondes. Die zet ik vervolgens om in 
 datum. 
 
-##Pseudocode
+## Pseudocode
 sol_days = gebruikers_invoer
 
 aardse_seconde = sol_days * aantal aardse seconde in sol dag
 
 uitvoer = leesbare_datum(aardse_seconde) 
 
-##Test
+## Test
 ```
 1876
 ```

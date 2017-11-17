@@ -1,4 +1,4 @@
-#Uitwerking opdracht
+# Uitwerking opdracht
 **Opdracht** Munten
 
 **Weeknummer** 1
@@ -11,27 +11,27 @@
 
 **Pogingnummer**1
 
-##Vraagstelling
+## Vraagstelling
 Zie : https://dodona.ugent.be/nl/exercises/1576457755/
 
-##Invoer
+## Invoer
 De waardes van de verschillende munten
 
-##Uitvoer
+## Uitvoer
 De totale waarde van de munten, het totaal aantal munten
 
-##Verbanden in en uitvoer
+## Verbanden in en uitvoer
 De gebruiker voert de waardes van de verschillende munten in. Daarvan houd
 ik de totale waarde en het totale aantal bij. 
 
-##Beperkingen
+## Beperkingen
 Vraagt altijd om alle munten
 
 Controlleerd niet op foutsituaties
 
 Accepteerd negatieve getallen
 
-##Voorbeelden
+## Voorbeelden
 Verwachte invoer: 
 ```
 5
@@ -53,12 +53,12 @@ Voorbeelden van ongeldige invoer
 120 euro (bevat letters)
 -299 (negatief getal)
 ```
-##Ontwerp
+## Ontwerp
 Ik maak een lijstje van alle verwachte muntstukken. Dat ga ik af en vraag de 
 gebruiker om hoeveel zij van dit muntstuk hebben. Na elke vraag update ik de 
 totalen. 
 
-##Pseudocode
+## Pseudocode
 ```
 for waarde in munten
 
@@ -67,7 +67,7 @@ for waarde in munten
     totale_waarde += aantal * waarde
 ```
 
-##Test
+## Test
 ```
 Aantal munten met waarde 1ct
 5
