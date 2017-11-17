@@ -1,7 +1,7 @@
 # Uitwerking opdracht
-**Opdracht** Formule 1
+**Opdracht** Interessante getallen
 
-**Weeknummer** 1
+**Weeknummer** 2
 
 **Studentnummer** S1096607
 
@@ -12,7 +12,7 @@
 **Pogingnummer**1
 
 ## Vraagstelling
-Zie : << URL >>
+Zie : https://dodona.ugent.be/nl/exercises/1236821040/
 
 ## Invoer
 De tijdsduur en de lengte van een raceronde. De duur is in minuten en mag 
