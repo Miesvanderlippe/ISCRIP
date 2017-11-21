@@ -18,7 +18,7 @@ def int_getal(test: int) -> int:
     """
     num = test
 
-    while not (num % test == 0 and totaal_cijfers(num) == test):
+    while not (totaal_cijfers(num) == test):
         num += test
 
     return num
