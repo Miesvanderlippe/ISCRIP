@@ -19,12 +19,10 @@ def is_valid_move(set1: tuple, set2: tuple)->bool:
 
 
 def main()->None:
-    pos1 = input("Pos 1")
-    pos2 = input("Pos 2")
+    pos1 = input("Pos 1\r\n")
+    pos2 = input("Pos 2\r\n")
     set1 = coordinates(pos1)
     set2 = coordinates(pos2)
-
-    print(set1, set2)
 
     print("het paard kan {0}springen van {1} naar {2}".format(
         ["niet ", ""][is_valid_move(set1, set2)], pos1, pos2))
