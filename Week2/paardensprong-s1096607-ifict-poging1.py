@@ -14,6 +14,14 @@ def coordinates(inp: str)->tuple:
 
 
 def is_valid_move(set1: tuple, set2: tuple)->bool:
+    """
+    Checks move of horse in chess for validity.
+    :param set1: Starting position
+    :param set2: Ending position
+    :return: Whether or not the move is valid
+    """
+    # Twee stappen de ene kant op, en een stap de andere kant op is een geldige
+    # paarden sprong.
     return (abs(set1[0] - set2[0]) == 2 and abs(set1[1] - set2[1]) == 1) or \
         (abs(set1[0] - set2[0]) == 1 and abs(set1[1] - set2[1]) == 2)
 

@@ -25,12 +25,17 @@ def int_getal(test: int) -> int:
 
 
 def main()->None:
+    # De getallen waarvan we een interessant getal berekenen
     inputs = []
+    # Het aantal getallen dat de gebruiker wil geven
     aantal_inputs = int(input("Getal tussen 0 en 50:\r\n"))
 
+    # We vragen de gebruikers om de getallen
     for i in range(0, aantal_inputs):
         inputs.append(int(input("Getal tussen 0 en 100:\r\n")))
 
+    # De getallen berekenen
+    # Soms timeout, misschien fixen.
     for i in inputs:
         print(int_getal(i))
 

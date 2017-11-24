@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from time import mktime
 
 
 def wekker(slaap_uur: int, slaap_minuut: int, ontwaak_uur: int, ontwaak_minuut: int) -> str:
@@ -13,16 +12,21 @@ def wekker(slaap_uur: int, slaap_minuut: int, ontwaak_uur: int, ontwaak_minuut: 
 
     :return: De beste tijd om wakker te worden
     """
+    # Deze strings zijn makkelijk te interpeteren als datetime
     slaap_tijd_str = '01/01/2000 {}:{}'.format(slaap_uur, slaap_minuut)
     minimale_ontwaak_tijd_str = '02/01/2000 {}:{}'.format(ontwaak_uur,
                                                           ontwaak_minuut)
 
+    # Omzetten naar datetime
     wekker_tijd = datetime.strptime(slaap_tijd_str, '%d/%m/%Y %H:%M')
     minimale_ontwaak_tijd = datetime.strptime(minimale_ontwaak_tijd_str,
                                               '%d/%m/%Y %H:%M')
+    # De optimale duur van een periode slaap
     interval = timedelta(minutes=90)
 
+    # Zolang we nog niet op willen staan
     while wekker_tijd < minimale_ontwaak_tijd:
+        # Tellen we de interval op bij de wekker
         wekker_tijd += interval
 
     return wekker_tijd.strftime('%H:%M')
