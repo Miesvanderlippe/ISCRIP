@@ -2,9 +2,9 @@
 
 def letter_to_t9(char: str)->int:
     """
-    The dirtiest of functions to translate a letter to a number on a phonepad.
-    :param char: Uppercase letter
-    :return: Number on keypad
+    Vertaald een letter naar een positie op het T9 toetsenbord
+    :param char: Letter (hoofdletter)
+    :return: Cijfer op het toetsenbord
     """
     if char in "ABC":
         return 2
@@ -27,9 +27,9 @@ def letter_to_t9(char: str)->int:
 
 def T9(input_str: str)->str:
     """
-    Translates a string into positions on a phone's keypad.
-    :param input_str: Input string ( case insensitive)
-    :return: positions on keypad
+    Vertaald een woord naar de T9 string
+    :param input_str: Input string ( hoofdletter ongevoelig)
+    :return: Posities op het toetsenbord
     """
     input_str = input_str.upper()
 

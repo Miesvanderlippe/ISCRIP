@@ -3,13 +3,13 @@
 def levensverwachting(geslacht: str, roker: bool, sport: int,
                       alcohol: int, fastfood: bool)->float:
     """
-    Calculates a life-expectancy over some simple inputs.
+    Berekent de levensverwachting van een persoon .
     :param geslacht: man / vrouw
-    :param roker: smokes or not
-    :param sport: exercise hours per week
-    :param alcohol: units of alcohol per week
-    :param fastfood: excessive fastfood consumption.
-    :return: Life expectancy
+    :param roker: rookt of niet
+    :param sport: uren sport per week
+    :param alcohol: eenheden alcohol per week
+    :param fastfood: buitensporige fastfoodconsumptie
+    :return: levensverwachting
     """
     basis_verwachting = 70
 
