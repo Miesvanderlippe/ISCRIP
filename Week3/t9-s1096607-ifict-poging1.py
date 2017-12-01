@@ -36,8 +36,22 @@ def T9(input_str: str)->str:
     return ''.join([str(letter_to_t9(x)) for x in input_str])
 
 
+def GSMoniemen(woord1: str, woord2: str)->bool:
+    """
+    Controleeerd of 2 woorden met dezelfde cijfers op een T9 toetsenbord
+    geschreven kunnen worden
+    :param woord1: Woord 1
+    :param woord2: Woord 2
+    :return: of ze met dezelfde toeten geschreven worden.
+    """
+    return T9(woord1) == T9(woord2)
+
+
 def main()->None:
-    print(T9(input("Voer uw tekst in:\r\n")))
+    woord1 = input("Woord 1:\r\n")
+    woord2 = input("Woord 2:\r\n")
+
+    print(GSMoniemen(woord1, woord2))
 
 
 if __name__ == '__main__':

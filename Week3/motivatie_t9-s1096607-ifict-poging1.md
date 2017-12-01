@@ -15,13 +15,16 @@
 Zie : https://dodona.ugent.be/nl/exercises/1858246142/
 
 ## Invoer
-De tekst die omgezet moet worden naar T9 toetsen 
+Men geeft een tweetal woorden waarvan gecontroleerd word of deze met dezelfde 
+toetsen op een T9 toetsenbord geschreven kunnen worden.  
 
 ## Uitvoer
-De cijfers zoals op het T9 toetsenbord.  
+Of de woorden met dezelfde toetsen geschreven worden. 
 
 ## Verbanden in en uitvoer
-De tekst word letter per letter omgezet naar cijfers op een T9 toetsenbord.  
+De twee woorden worden letter per letter omgezet naar cijfers op een T9 
+toetsenbord. Deze cijferreeks word vergeleken en het resultaat word terug 
+gegeven.   
 
 ## Beperkingen
 Alleen letters binnen het alfabet worden geacapteerd, de rest wordt een 0. Dit
@@ -30,12 +33,14 @@ klopt in principe voor punten en spaties maar niet voor getallen.
 ## Voorbeelden
 Verwachte invoer:
 ```
-Voer uw tekst in:
-Dit is de documentatie voor de Tee Negen opdracht
+Woord1: 
+aanbod
+Woord2:
+bamboe
 ```
 Verwachte uitvoer:
 ```
-3480470330362863682843086670330833063436067372248
+True
 ```
 Voorbeelden van ongeldige invoer
 ```
@@ -45,7 +50,8 @@ Voer uw tekst in:
 ```
 
 ## Ontwerp
-Er wordt per letter gekeken naar de positie op het toetsenbord.    
+Er wordt per letter gekeken naar de positie op het toetsenbord. Dit voor allebei
+de woorden. De resulterende cijferreeksen worden vergeleken.     
 
 ## Pseudocode
 ```
@@ -61,7 +67,9 @@ print(uitvoer)
 
 ## Test
 ```
-Voer uw tekst in:
-DIt is de TNegenTest
-34804703308634368378
+Woord 1:
+bamboe
+Woord 2:
+aanbod
+True
 ```
