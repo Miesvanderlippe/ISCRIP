@@ -1,6 +1,7 @@
 from string import ascii_lowercase
 
 vowels = {'a', 'e', 'i', 'o', 'u'}
+consonants = set(ascii_lowercase).difference(vowels)
 
 
 def medeklinkers(filename: str) -> {}:
@@ -10,12 +11,21 @@ def medeklinkers(filename: str) -> {}:
     :return: Een dictionary met de letters (key) en hun doubledutch vertaling
     """
     with open(filename) as file:
-        return {
+        dict = {
             line[0]: line[1]
             for line in [
                 x.strip().replace(' ', '').split('-') for x in file.readlines()
             ]
         }
+
+    # Only consonants should be translated
+    assert(not any([x for x in dict.keys() if x not in consonants]))
+    # All consonants are translated
+    assert(len(dict.keys()) == len(consonants))
+    # All translations start with their respective char
+    assert(all([key == dict[key][0] for key in dict]))
+
+    return dict
 
 
 def vertaalWoord(word: str, dictionary: {}) -> str:
