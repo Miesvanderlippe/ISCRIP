@@ -11,7 +11,7 @@ def lees_luchthavens(bestandsnaam: str) -> dict:
     """
     airports = dict()
 
-    with open(path.dirname(__file__) + '/' + bestandsnaam) as f:
+    with open(path.join(path.dirname(__file__), bestandsnaam)) as f:
         inhoud = f.readlines()
 
         for row in inhoud[1:]:
