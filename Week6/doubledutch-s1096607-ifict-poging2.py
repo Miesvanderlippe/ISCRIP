@@ -55,7 +55,10 @@ def vertaalWoord(word: str, dictionary: {}) -> str:
             index += 1
         # If an encoding is available for a char use it
         elif cur_char.lower() in dictionary.keys():
-            encoded += dictionary[cur_char.lower()]
+            if cur_char.isupper():
+                encoded += (dictionary[cur_char.lower()]).capitalize()
+            else:
+                encoded += dictionary[cur_char.lower()]
         # Otherwise use the char itself (vowels etc)
         else:
             encoded += cur_char
