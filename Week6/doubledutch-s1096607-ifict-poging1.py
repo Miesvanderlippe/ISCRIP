@@ -78,8 +78,18 @@ def vertaal(sentence: str, dictionary: {}) -> str:
 
 
 def main() -> None:
-    doubledutchdicionary = medeklinkers('dutchLetters.txt')
-    print(vertaal(input("Woord of zin om te vertalen"), doubledutchdicionary))
+    dutchLetter = medeklinkers('dutchLetters.txt')
+
+    print(dutchLetter['s'])
+    print(dutchLetter['q'])
+    print(dutchLetter['d'])
+    # print(dutchLetter['e'])
+
+    print(vertaalWoord('took', dutchLetter))
+    print(vertaalWoord('BAMBOO', dutchLetter))
+    print(vertaalWoord('Yesterday', dutchLetter))
+
+    print(vertaal('I took a walk to the park yesterday.', dutchLetter))
 
 
 if __name__ == '__main__':
