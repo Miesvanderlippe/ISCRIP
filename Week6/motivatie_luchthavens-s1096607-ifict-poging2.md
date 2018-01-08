@@ -9,7 +9,7 @@
 
 **Specialisatie** FICT
 
-**Pogingnummer**1
+**Pogingnummer**2
 
 ## Vraagstelling
 Zie : https://dodona.ugent.be/nl/exercises/1748605282/
