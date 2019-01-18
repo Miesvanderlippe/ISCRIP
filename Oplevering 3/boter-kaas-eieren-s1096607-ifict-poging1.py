@@ -54,8 +54,7 @@ def get_column(array: [[]], index: int) -> []:
 
 def winnaar(bord: []) -> str:
     # By default, no-one wins
-    x_wins = False
-    o_wins = False
+    x_wins, o_wins = False, False
 
     # All possible winlines on the board
     winlines = [
@@ -88,11 +87,11 @@ def winnaar(bord: []) -> str:
     # If no-one wins, or both win
     if x_wins == o_wins:
         # It's a draw
-        return ''
+        return 'gelijkspel'
     elif x_wins:
-        return 'X'
+        return 'X wint'
     elif o_wins:
-        return 'O'
+        return 'O wint'
 
 
 
@@ -110,7 +109,4 @@ if __name__ == '__main__':
     ]
 
     for result in results:
-        if result == '':
-            print('gelijkspel')
-        else:
-            print('{0} wint'.format(result))
+        print(result)
