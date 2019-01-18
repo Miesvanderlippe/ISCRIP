@@ -6,6 +6,17 @@ Het is uiteraard niet de bedoeling dat je tezeer geinspireerd raakt (plagiaat pl
 
 # Opdrachten
 
+## Oplevering 1
+**Germanisering** https://dodona.ugent.be/nl/exercises/1134030023/
+
+**Schrikkeljaar** https://dodona.ugent.be/nl/exercises/249455727/ 
+
+**Verkiezingsfraude** https://dodona.ugent.be/nl/exercises/1080847187/
+
+## Oplevering 3
+
+**Boter kaas en eieren** https://dodona.ugent.be/nl/exercises/566731614/
+
 ## Week 1 
 **Mars** https://dodona.ugent.be/nl/exercises/1813154454/
 
